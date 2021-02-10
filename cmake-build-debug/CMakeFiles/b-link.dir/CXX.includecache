@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/source/b-link.hpp
+C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/source/b-link.hpp
 climits
 -
 fstream
@@ -18,7 +18,21 @@ sstream
 utility
 -
 
-C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/source/main.cpp
+C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/source/main.cpp
+condition_variable
+-
+iostream
+-
+mutex
+-
+random
+-
+sstream
+-
+thread
+-
+b-link.hpp
+C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/source/b-link.hpp
 condition_variable
 -
 iostream
@@ -30,5 +44,5 @@ random
 thread
 -
 b-link.hpp
-C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/source/b-link.hpp
+C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/source/b-link.hpp
 

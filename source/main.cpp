@@ -10,10 +10,10 @@
 
 std::size_t NUMBER_THREADS = 8;
 
-const std::size_t NUMBER_OPERATIONS = 100000;
+const std::size_t NUMBER_OPERATIONS = 10;
 
 int MIN_VALUE = 1;
-int MAX_VALUE = 15000;
+int MAX_VALUE = 10;
 
 std::random_device rd;
 
@@ -101,7 +101,7 @@ void insert_and_notify(EDA::Concurrent::BLinkTree<3, int> *b_link, int id) {
     for (std::size_t i = 0; i < NUMBER_OPERATIONS; ++i) {
         std::unique_lock<std::mutex> lock(MUTEX[id]);
         int value = distribution(rd);
-        // b_link->insert(value);
+         b_link->insert(value);
         LAST_VALUE_INSERTED[id] = value;
         VALUE_INSERTED[id].notify_one();
     }
@@ -115,12 +115,12 @@ void search_when_notified(EDA::Concurrent::BLinkTree<3, int> *b_link, int id) {
         std::unique_lock<std::mutex> lock(MUTEX[id]);
         VALUE_INSERTED[id].wait(lock);
         std::cout << LAST_VALUE_INSERTED[id] << "\n";
-        // if (!b_link->search(LAST_VALUE_INSERTED[id])) {
-        //   std::stringstream stream;
-        //   stream << "Value not found in B Link: " << LAST_VALUE_INSERTED[id]
-        //          << "\n";
-        //   std::cerr << stream.str() << "\n";
-        // }
+        if (!b_link->search(LAST_VALUE_INSERTED[id])) {
+           std::stringstream stream;
+           stream << "Value not found in B Link: " << LAST_VALUE_INSERTED[id]
+                  << "\n";
+           std::cerr << stream.str() << "\n";
+         }
     }
 }
 
@@ -141,7 +141,7 @@ void run_parallel_synchronous_test() {
     for (std::size_t i = 0; i < NUMBER_THREADS; ++i) {
         insert_threads[i].join();
         // do not uncomment the following line
-        // search_threads[i].join();
+         search_threads[i].join();
     }
 }
 

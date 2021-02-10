@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link
+# Install script for directory: C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

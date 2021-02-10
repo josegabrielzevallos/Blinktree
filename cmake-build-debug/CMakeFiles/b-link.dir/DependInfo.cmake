@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/source/main.cpp" "C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/CMakeFiles/b-link.dir/source/main.cpp.obj"
+  "C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/source/main.cpp" "C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/CMakeFiles/b-link.dir/source/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

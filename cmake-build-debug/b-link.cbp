@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="b-link">
-				<Option output="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/b-link.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug"/>
+				<Option output="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/b-link.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/$(CMAKE_CURRENT_SOURCE_DIR)/source"/>
+					<Add directory="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/$(CMAKE_CURRENT_SOURCE_DIR)/source"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -43,20 +43,20 @@
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 b-link"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 b-link"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="b-link/fast">
-				<Option output="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/b-link.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug"/>
+				<Option output="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/b-link.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/$(CMAKE_CURRENT_SOURCE_DIR)/source"/>
+					<Add directory="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/$(CMAKE_CURRENT_SOURCE_DIR)/source"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -65,27 +65,27 @@
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 b-link/fast"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 b-link/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/source/main.cpp">
+		<Unit filename="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/source/main.cpp">
 			<Option target="b-link"/>
 		</Unit>
-		<Unit filename="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/CMakeLists.txt">
+		<Unit filename="C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

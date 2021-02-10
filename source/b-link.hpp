@@ -23,7 +23,7 @@ class BLinkTree {
 
         Nodo(){
             key = new int[B];
-            ptr=new Nodo* [B+1];
+            ptr=new Nodo* [B+2];
         }
     };
     Nodo *root;
@@ -37,6 +37,12 @@ public:
   BLinkTree() {root=nullptr;}
 
   ~BLinkTree() {}
+///////////////////////////////////////////////////////////////////////////////////
+
+    mutex tree_mutex;
+    condition_variable cond_var;
+
+/////////////////////////////////////////////////////////////////////////////////
 
   std::size_t size() const {}
 
@@ -68,6 +74,13 @@ public:
                   return 1;
               }
           }
+          apuntador=apuntador->ptr[B+2];
+          for(int i=0;i<apuntador->Tam;i++){
+              if(apuntador->key[i]==value){
+                  cout<<"Encontrado"<<endl;
+                  return 1;
+              }
+          }
           cout<<"No encontrado";
           return 0;
       }
@@ -77,12 +90,14 @@ public:
 
   void insert(const data_type& value) {
       if (empty()) {
+          std::unique_lock<std::mutex> lock(tree_mutex);
           root = new Nodo;
           root->key[0] = value;//inicilaizamos el rooty la hoja
           root->hoja = true;// es un ahoja
           root->Tam = 1;
-      } else {
-
+          cond_var.notify_one();
+      }else {
+          std::unique_lock<std::mutex> lock(tree_mutex);
           Nodo *apuntador = root;
           Nodo *padre;
           actual(value,apuntador,padre);
@@ -114,8 +129,8 @@ public:
               nuevahoja->hoja = true;
               apuntador->Tam = (B + 1) / 2;
               nuevahoja->Tam = B + 1 - (B + 1) / 2;
-              apuntador->ptr[apuntador->Tam] = nuevahoja;
-              nuevahoja->ptr[nuevahoja->Tam] = apuntador->ptr[B];
+              apuntador->ptr[B+2] = nuevahoja;
+              nuevahoja->ptr[B+2] = apuntador->ptr[B];
               apuntador->ptr[B] = NULL;
 
               for (i = 0; i < apuntador->Tam; i++) {
@@ -135,8 +150,10 @@ public:
               } else {
                   Insertardentro(nuevahoja->key[0], padre, nuevahoja);
               }
+              cond_var.notify_one();
           }
       }
+
   }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -177,6 +194,7 @@ public:
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   void Insertardentro(const data_type& value, Nodo *apuntador, Nodo *hijo) {
+      std::unique_lock<std::mutex> lock(tree_mutex);
       if (apuntador->Tam < B) {
           int i = 0;
 
@@ -188,7 +206,9 @@ public:
           apuntador->key[i] = value;
           apuntador->Tam++;
           apuntador->ptr[i + 1] = hijo;
+          cond_var.notify_one();
       } else {
+          std::unique_lock<std::mutex> lock(tree_mutex);
           Nodo *nuevodentro = new Nodo;
           int TempKey[B + 1];
           Nodo *TempPtr[B + 2];
@@ -212,6 +232,10 @@ public:
           nuevodentro->hoja = false;
           apuntador->Tam = (B + 1) / 2;
           nuevodentro->Tam = B - (B + 1) / 2;
+
+          apuntador->ptr[B+2] = nuevodentro;
+          nuevodentro->ptr[B+2] = apuntador->ptr[B];//Link
+
           for (i = 0, j = apuntador->Tam + 1; i < nuevodentro->Tam; i++, j++) {
               nuevodentro->key[i] = TempKey[j];
           }
@@ -229,6 +253,7 @@ public:
           } else {
               Insertardentro(apuntador->key[apuntador->Tam], Encontrarpadre(root, apuntador), nuevodentro);
           }
+          cond_var.notify_one();
       }
   }
 

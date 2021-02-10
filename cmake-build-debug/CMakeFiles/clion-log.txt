@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Jose Gabriel\Documents\C.Computacion\2021-R\EDA\Parcial\b-link"
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Jose Gabriel\Documents\C.Computacion\2021-R\EDA\Final\b-link"
 -- The C compiler identification is GNU 8.1.0
 -- The CXX compiler identification is GNU 8.1.0
 -- Check for working C compiler: C:/mingw64/bin/gcc.exe
@@ -20,4 +20,4 @@
 -- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Parcial/b-link/cmake-build-debug
+-- Build files have been written to: C:/Users/Jose Gabriel/Documents/C.Computacion/2021-R/EDA/Final/b-link/cmake-build-debug
