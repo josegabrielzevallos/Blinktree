@@ -94,8 +94,8 @@ public:
 
               apuntador->key[i] = value;
               apuntador->Tam++;
-              apuntador->ptr[apuntador->Tam] = apuntador->ptr[apuntador->Tam - 1];
-              apuntador->ptr[apuntador->Tam - 1] = NULL;
+              //apuntador->ptr[apuntador->Tam] = apuntador->ptr[apuntador->Tam - 1];
+              //apuntador->ptr[apuntador->Tam - 1] = NULL;
           } else {
               Nodo *nuevahoja = new Nodo;// se crea un anueva hoja
               int tempNodo[B + 1];
@@ -104,7 +104,7 @@ public:
               }
               int i = 0, j;
 
-              while (value > tempNodo[i] && i < B)
+              while (value > tempNodo[i] && i < B)// sort en el tempnode
                   i++;
               for (int j = B + 1; j > i; j--) {
                   tempNodo[j] = tempNodo[j - 1];
@@ -236,7 +236,7 @@ public:
 
   Nodo *Encontrarpadre(Nodo *apuntador, Nodo *hijo) {
       Nodo *padre;
-      if (apuntador->hoja || (apuntador->ptr[0])->hoja) {
+      if (apuntador->hoja || (apuntador->ptr[0])->hoja) { //si es una hoja o apunta a una hojapai
           return NULL;
       }
       for (int i = 0; i < apuntador->Tam + 1; i++) {
